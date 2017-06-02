@@ -36,4 +36,7 @@ VOLUME /dspace/code/src
 
 EXPOSE 3000
 WORKDIR /dspace/code
+
+ENV ADDRESS 0.0.0.0
+
 CMD ["yarn", "start"]
