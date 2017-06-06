@@ -9,4 +9,4 @@ fi
 
 echo "Running yarn..."
 cd /dspace/code
-yarn run watch:dev
+yarn run watch:dev:poll
