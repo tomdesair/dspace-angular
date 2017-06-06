@@ -7,6 +7,6 @@ else
         cp -a /tmp/node_modules /dspace/code;
 fi
 
-echo "Running yarn..."
+echo "Running yarn watch..."
 cd /dspace/code
 yarn run watch:dev:poll

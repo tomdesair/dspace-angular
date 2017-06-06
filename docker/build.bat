@@ -1,7 +1,7 @@
 @ECHO OFF
 SET ARG=%1
 IF NOT DEFINED ARG (
-  docker build -t atmire/dspace-angular .
+  docker build -t dspace/dspace-angular .
 ) ELSE (
-  docker build -t atmire/dspace-angular --build-arg %1 .
+  docker build -t dspace/dspace-angular --build-arg %1 .
 )

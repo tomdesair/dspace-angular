@@ -23,9 +23,11 @@ RUN set -x \
       && rm -rf /dspace/code/* \
       && apk del .build-deps
 
-COPY startup.sh /dspace
+COPY files/watch.sh /dspace
+COPY files/install.sh /dspace
+COPY files/cleanup.sh /dspace
 
 EXPOSE 3000
 WORKDIR /dspace/code
 
-CMD ["/dspace/startup.sh"]
+CMD ["/dspace/watch.sh"]
